@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunitha's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8f22a5ca50.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>WEB DEVELOPER</p>
+                <h1>Hi,I'm <span>Sunitha</span><br> From Karnataka.</h1>
+            </div>
+        </div>
+        
+    
+        </div>
+
+<!------------------about---------------->
+
+    <div id="about">
+        <div  class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+                <div class="about-col-2">
+                <h1 class = "sub-title">About Me</h1>
+                <p>I'm a passionated web developer, Seeking entrylevel opportunities to expand skills 
+                    while facilitating company growth. My goal is to become associated with a company where I can 
+                    utilize my skills and gain further experience while enhancing the 
+                    company's productivity and reputation. To grow with the 
+                    company where I can effectively contribute my software skills as 
+                    professional.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Certifications')">Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java </span><br>Core java,Proramming,Advance java</li>
+                            <li><span>Web-Designing</span><br>HTML,CSS</li>
+                            <li><span>Database Managemant</span><br>MYSQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Bachelor of Computer Application</span><br>Mangalore University</li>
+                            <li><span>PUC</span><br>Junior College, Thirthahalli</li>
+                            <li><span>SSLC</span><br>Dr U R Ananthmurty High School, Thirthahalli</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Certifications">
+                        <ul>
+                            <li><span>Java Full Stack Web-Development course </span><br>Tap Academy</li>
+                            <li><span>National Cadet Corps certification</span><br>NCC Diroctarate of Karnataka and Goa</li>
+                        </ul>
+                    </div>
+
+
+            </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!------------------Projects-------------------->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class = "sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-droplet"></i>
+                    <h2>Blood Bank and Donor Management System</h2>
+                    <p>The Blood Bank and Donor Management project is an 
+                        innovative web-based platform designed to facilitate the 
+                        process of blood donation and supply management. The 
+                        project aims to connect blood donors, recipients, and blood 
+                        banks through an intuitive and secure online system</p>
+                        <a href="#"> https://suniiii123.github.io/Blood-Bank-and-Donor-Management-System/</a>
+                </div>
+                <div>
+
+                    <i class="fa-regular fa-plane-departure"></i>
+                    <h2>Travel School</h2>
+                    <p>Our travel project is a collaborative effort aimed at exploring the diverse facets of travel. 
+                        From the breathtaking landscapes of far-off destinations to the practicalities of planning a trip, we cover it all. 
+                        Through engaging content, vivid imagery, and insightful discussions,
+                         we aim to inspire curiosity and promote a deeper understanding of the world around us."</p>
+                        <a href="#"> https://suniiii123.github.io/Travel_School/</a>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <!------------------contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>  shettysunitha116@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen-button"></i>  9591430837</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                    <a href="images/sunitha2002.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-solid fa-code"></i>    copyright   <i class="fa-solid fa-copyright"></i>Sunitha H S<i class="fa-solid fa-code"></i></p>
+        </div>
+    </div>
+    
+    <script>
+
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks)
+    {
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents)
+    {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+
+        }
+
+
+
+    </script>
+
+</body>
+</html>

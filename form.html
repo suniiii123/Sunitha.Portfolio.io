@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Personal Details</legend>
+        <label for="name">Name</label>
+        <input type="text" required id="name"><br><br>
+        <label for="age">Age</label>
+        <input type="number" required id="age"><br><br>
+        <label for="email">Email</label>
+        <input type="email" required id="email"><br><br>
+        <label for="dob">DOB</label>
+        <input type="date" required id="dob"><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Education Details</legend>
+        <label for="">Department</label>
+        <input type="radio" id="cs" name="dept">
+        <label for="cs">CS</label>
+        <input type="radio" id="ec" name="dept">
+        <label for="ec">EC</label>
+        <input type="radio" id="civil" name="dept">
+        <label for="civil">Civil</label>
+        <input type="radio" id="mech" name="dept">
+        <label for="mech">Mech</label><br><br>
+
+        <label for="">YOG</label>
+        <input list="yop" id="yog">
+        <datalist id="yop">
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+
+        </datalist><br><br>
+
+        <label for="">Skill Set</label>
+        <input type="checkbox" id="HTML">
+        <label for="HTML">HTML</label>
+        <input type="checkbox" id="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js">
+        <label for="js">JavaScript</label>
+        <input type="checkbox" id="react">
+        <label for="react">REACT</label><br>
+
+    </fieldset>
+    <input type="submit">
+    </form>
+</body>
+</html>
